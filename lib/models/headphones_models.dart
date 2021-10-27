@@ -14,6 +14,6 @@ class HeadPhones {
 }
 
 List<HeadPhones> headlist = [
-  HeadPhones(image: 'assets/head1.png', colors: const Color(0xfffef8e0), name: 'AirPods Max', price: '\$549'),
+  HeadPhones(image: 'assets/head1.png', colors: const Color(0xfffef8e0), name: '  AirPods Max', price: '\$549'),
   HeadPhones(image: 'assets/head2.png', colors: const Color(0xffd4dbf8), name: '  X-Seven', price: '\$79')
 ];
