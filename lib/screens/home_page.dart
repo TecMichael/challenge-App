@@ -93,12 +93,12 @@ class _HomePageState extends State<HomePage> {
               const SizedBox(height: 40),
               Padding(
                 padding: const EdgeInsets.only(
-                  right: 270,
+                  // right: 270,
                 ),
                 child: Column(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(left: 7),
+                      padding: const EdgeInsets.only(left: 0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -112,9 +112,15 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     const SizedBox(height: 5),
-                    const Text(
-                      'Sort by  price',
-                      style: TextStyle(color: Colors.grey, fontSize: 18),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: const [
+                        Text(
+                          'Sort by  price',
+                          style: TextStyle(color: Colors.grey, fontSize: 18),
+                        ),
+                        Icon(Icons.sort)
+                      ],
                     ),
                   ],
                 ),
@@ -217,19 +223,20 @@ class _HomePageState extends State<HomePage> {
                   return GestureDetector(
                     onTap: () {},
                     child: Container(
+                      margin: const EdgeInsets.only(bottom: 20),
                       height: 165,
                       width: 388,
                       padding: const EdgeInsets.all(8.0),
                       decoration: BoxDecoration(
                         color: const Color(0xffE8FCD7),
                         borderRadius: BorderRadius.circular(12),
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.45),
-                            blurRadius: 9.5,
-                            offset: const Offset(5, 7),
-                          ),
-                        ],
+                        // boxShadow: [
+                        //   BoxShadow(
+                        //     color: Colors.grey.withOpacity(0.45),
+                        //     blurRadius: 9.5,
+                        //     offset: const Offset(5, 7),
+                        //   ),
+                        // ],
                       ),
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
