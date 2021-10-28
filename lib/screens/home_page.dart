@@ -230,13 +230,7 @@ class _HomePageState extends State<HomePage> {
                       decoration: BoxDecoration(
                         color: const Color(0xffE8FCD7),
                         borderRadius: BorderRadius.circular(12),
-                        // boxShadow: [
-                        //   BoxShadow(
-                        //     color: Colors.grey.withOpacity(0.45),
-                        //     blurRadius: 9.5,
-                        //     offset: const Offset(5, 7),
-                        //   ),
-                        // ],
+                     
                       ),
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
@@ -250,13 +244,7 @@ class _HomePageState extends State<HomePage> {
                                   fit: BoxFit.cover),
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(17),
-                              // boxShadow: [
-                              //   BoxShadow(
-                              //     color: Colors.grey.withOpacity(0.45),
-                              //     blurRadius: 9.5,
-                              //     offset: const Offset(5, 7),
-                              //   ),
-                              // ],
+                              
                             ),
                           ),
                           const SizedBox(width: 30),
