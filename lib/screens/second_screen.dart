@@ -89,7 +89,7 @@ class SecondScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(12), color: Colors.black),
               child: MaterialButton(
                 height: 71,
-                minWidth: double.infinity,
+                minWidth: 395,
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (_) => const CartScreen()));
