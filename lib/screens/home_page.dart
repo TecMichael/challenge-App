@@ -119,7 +119,7 @@ class _HomePageState extends State<HomePage> {
                           'Sort by  price',
                           style: TextStyle(color: Colors.grey, fontSize: 18),
                         ),
-                        Icon(Icons.sort)
+                        Icon(Icons.tune)
                       ],
                     ),
                   ],

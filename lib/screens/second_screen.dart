@@ -22,7 +22,7 @@ class SecondScreen extends StatelessWidget {
                   enlargeCenterPage: true,
                   enableInfiniteScroll: false,
                   initialPage: 2,
-                  // autoPlay: true,
+                  autoPlay: true,
                   height: 350),
               items: [
                 Image.asset('assets/head1.png'),
