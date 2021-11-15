@@ -3,6 +3,8 @@
 import 'package:challenge/models/headphones_models.dart';
 import 'package:challenge/models/recommended.dart';
 import 'package:challenge/screens/second_screen.dart';
+import 'package:challenge/screens/tesla.dart';
+import 'package:challenge/screens/tesla_file.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -93,8 +95,8 @@ class _HomePageState extends State<HomePage> {
               const SizedBox(height: 40),
               Padding(
                 padding: const EdgeInsets.only(
-                  // right: 270,
-                ),
+                    // right: 270,
+                    ),
                 child: Column(
                   children: [
                     Padding(
@@ -102,11 +104,17 @@ class _HomePageState extends State<HomePage> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const <Widget>[
-                          Text(
-                            'Popular',
-                            style: TextStyle(
-                                fontSize: 25, fontWeight: FontWeight.bold),
+                        children: <Widget>[
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.push(context,
+                                  MaterialPageRoute(builder: (_) => const NewsScreen()));
+                            },
+                            child: const Text(
+                              'Popular',
+                              style: TextStyle(
+                                  fontSize: 25, fontWeight: FontWeight.bold),
+                            ),
                           ),
                         ],
                       ),
@@ -230,7 +238,6 @@ class _HomePageState extends State<HomePage> {
                       decoration: BoxDecoration(
                         color: const Color(0xffE8FCD7),
                         borderRadius: BorderRadius.circular(12),
-                     
                       ),
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
@@ -244,7 +251,6 @@ class _HomePageState extends State<HomePage> {
                                   fit: BoxFit.cover),
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(17),
-                              
                             ),
                           ),
                           const SizedBox(width: 30),
