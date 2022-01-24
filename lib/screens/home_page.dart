@@ -3,7 +3,6 @@
 import 'package:challenge/models/headphones_models.dart';
 import 'package:challenge/models/recommended.dart';
 import 'package:challenge/screens/second_screen.dart';
-import 'package:challenge/screens/tesla.dart';
 import 'package:challenge/screens/tesla_file.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -164,7 +163,7 @@ class _HomePageState extends State<HomePage> {
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 10, vertical: 20),
                               child: Column(
-                                mainAxisAlignment: MainAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.start,  
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Container(
